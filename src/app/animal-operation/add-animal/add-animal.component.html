@@ -1,6 +1,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <div class="add">
-  <form class="form" [FormGroup]="add" (ngSubmit)="add()">
+  <form class="form" [formGroup]="addForm" (ngSubmit)="add()">
     <div class="form-group row">
       <label for="inputID" class="col-sm-2 col-form-label">Animal Id :</label>
       <div class="col-sm-10">

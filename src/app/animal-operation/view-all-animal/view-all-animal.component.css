@@ -1,29 +1,25 @@
 body {
     position: absolute;
-    font-family: Arial, sans-serif;
     font-size: 14px;
     line-height: 20px;
-    color: #333333;
 }
   
 table {
-    border: solid 1px #000;
-    padding: 10px;
+    border: 1px solid #27ba88;
+    text-align: center;
+    border-collapse:collapse;
+    caption-side:bottom;
+    position: absolute;
+    color: white;
 }
 
 th {
-    border: solid 1px #000;
     padding: 10px;
+    color: #27ba88;
 }
 
 td {
-    border: solid 1px #000;
     padding: 10px;
-}
-  
-table {
-      border-collapse:collapse;
-      caption-side:bottom;
-      position: absolute;
-      color: white;
+    color: white;
+    text-align: left;
 }
