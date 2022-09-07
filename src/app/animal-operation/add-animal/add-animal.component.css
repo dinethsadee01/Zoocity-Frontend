@@ -63,3 +63,7 @@
 .btn:hover{
   background-color: #27ba88;
 }
+
+.btn :disabled{
+  background-color: #ba27276a;
+}

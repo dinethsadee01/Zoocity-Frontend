@@ -3,47 +3,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <div class="input row">
-    <label for="inputID" class="col-sm-2 col-form-label">Enter Animal Id :</label>
-    <input type="id" class="form-control" id="aid" placeholder="Enter Animal ID">
-    <button type="submit" class="btn btn-primary">Search</button>
-  </div>
+  <form [formGroup]="viewForm" (ngSubmit)="find()">
+    <div class="input row">
+      <label for="inputID" class="col-sm-2 col-form-label">Enter Animal Id :</label>
+      <input type="id" formControlName="search" class="form-control" id="aid" placeholder="Enter Animal ID">
+      <button type="submit" class="btn btn-primary">Search</button>
+    </div>
+  </form>
   <div>
     <div class="find">
         <div class="find-group row">
           <label for="inputID" class="col-sm-2 col-find-label">A Id :</label>
           <div class="col-sm-10">
-            <p class="find-control" id="aid">---</p>
+            <p class="find-control" id="aid">{{aId}}</p>
           </div>
         </div>
         <div class="find-group row">
           <label for="inputName" class="col-sm-2 col-find-label">Name :</label>
           <div class="col-sm-10">
-            <p class="find-control" id="aname">---</p>
+            <p class="find-control" id="aname">{{aName}}</p>
           </div>
         </div>
         <div class="find-group row">
             <label for="inputAge" class="col-sm-2 col-find-label">Age :</label>
             <div class="col-sm-10">
-              <p class="find-control" id="age">---</p>
+              <p class="find-control" id="age">{{aAge}}</p>
             </div>
         </div>
         <div class="find-group row">
             <label for="inputGender" class="col-sm-2 col-find-label">Gender :</label>
             <div class="col-sm-10">
-              <p class="find-control" id="agender">---</p>
+              <p class="find-control" id="agender">{{aGender}}</p>
             </div>
         </div>
         <div class="find-group row">
             <label for="inputSpecie" class="col-sm-2 col-find-label">Specie :</label>
             <div class="col-sm-10">
-              <p class="find-control" id="aspecie">---</p>
+              <p class="find-control" id="aspecie">{{aCategory}}</p>
             </div>
         </div>
         <div class="find-group row">
-          <label for="inputNotes" class="col-sm-2 col-find-label">Notes :</label>
+          <label for="inputSubspecie" class="col-sm-2 col-find-label">Subspec :</label>
           <div class="col-sm-10">
-            <p class="find-control" id="aspecie">---</p>
+            <p class="find-control" id="asubspecie">{{aSubspecie}}</p>
           </div>
       </div>
     </div>

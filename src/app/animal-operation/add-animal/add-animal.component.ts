@@ -13,8 +13,9 @@ export class AddAnimalComponent implements OnInit {
     animal_id: new FormControl(null,[Validators.required]),
     animal_name: new FormControl(null,[Validators.required]),
     animal_age: new FormControl(null,[Validators.required]),
+    animal_subspecie: new FormControl(null,[Validators.required]),
     animal_gender: new FormControl(null,[Validators.required]),
-    animal_specie: new FormControl(null,[Validators.required])
+    animal_category: new FormControl(null,[Validators.required])
   })
   constructor(private animalService:AnimalService) { }
   add(){

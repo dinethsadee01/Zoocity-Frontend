@@ -3,53 +3,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <div class="input row">
-    <label for="inputID" class="col-sm-2 col-form-label">Enter Animal Id :</label>
-    <input type="id" class="form-control" id="aid" placeholder="Enter Animal ID">
-    <button type="submit" class="btn1 btn-primary">Search</button>
-    <button type="submit" class="btn3 btn-primary">Delete</button>
-  </div>
+  <form [formGroup]="viewForm2" (ngSubmit)="findE()">
+    <div class="input row">
+      <label for="inputID" class="col-sm-2 col-form-label">Enter Animal Id :</label>
+      <input type="id" formControlName="search" class="form-control" id="aid" placeholder="Enter Animal ID">
+      <button type="submit" class="btn1 btn-primary">Search</button>
+      <button type="submit" class="btn3 btn-primary">Delete</button>
+    </div>
+  </form>
   <div>
     <div class="find">
         <div class="find-group row">
           <label for="inputID" class="col-sm-2 col-find-label">A Id :</label>
           <div class="col-sm-10">
-            <p class="find-control" id="aid">---</p>
+            <p class="find-control" id="aid">{{aId}}</p>
           </div>
         </div>
         <div class="find-group row">
           <label for="inputName" class="col-sm-2 col-find-label">Name :</label>
           <div class="col-sm-10">
-            <p class="find-control" id="aname">---</p>
+            <p class="find-control" id="aname">{{aName}}</p>
           </div>
         </div>
         <div class="find-group row">
             <label for="inputAge" class="col-sm-2 col-find-label">Age :</label>
             <div class="col-sm-10">
-              <p class="find-control" id="age">---</p>
+              <p class="find-control" id="age">{{aAge}}</p>
             </div>
         </div>
         <div class="find-group row">
             <label for="inputGender" class="col-sm-2 col-find-label">Gender :</label>
             <div class="col-sm-10">
-              <p class="find-control" id="agender">---</p>
+              <p class="find-control" id="agender">{{aGender}}</p>
             </div>
         </div>
         <div class="find-group row">
             <label for="inputSpecie" class="col-sm-2 col-find-label">Specie :</label>
             <div class="col-sm-10">
-              <p class="find-control" id="aspecie">---</p>
+              <p class="find-control" id="aspecie">{{aCategory}}</p>
             </div>
         </div>
         <div class="find-group row">
           <label for="inputNotes" class="col-sm-2 col-find-label">Notes :</label>
           <div class="col-sm-10">
-            <p class="find-control" id="aspecie">---</p>
+            <p class="find-control" id="aspecie">{{aSubspecie}}</p>
           </div>
       </div>
     </div>
     <div class="update-form">
-        <form class="form" >
+        <form class="form" [formGroup]="addForm2" (ngSubmit)="addE()">
             <div class="form-group row">
               <label for="inputName" class="col-sm-2 col-form-label">Name :</label>
               <div class="col-sm-10">
@@ -91,6 +93,12 @@
               </div>
             </fieldset>
             <div class="form-group row">
+              <label for="inputCategory" class="col-sm-2 col-form-label">Specie :</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" formControlName="animal_category"  id="aspec" placeholder="Specie" required="true">
+              </div>
+            </div>
+            <!--<div class="form-group row">
               <legend class="col-form-label col-sm-2 pt-0">Specie :</legend>
               <div class="col-sm-10">
                 <select name="specie" id="specie">
@@ -101,7 +109,7 @@
                   <option value="bird">Bird</option>
                 </select>
               </div>
-            </div>
+            </div>-->
             <div class="form-group row">
               <div class="col-sm-10">
                 <button type="submit" class="btn2 btn-primary">Update</button>

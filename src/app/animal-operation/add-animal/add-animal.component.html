@@ -10,7 +10,7 @@
     <div class="form-group row">
       <label for="inputName" class="col-sm-2 col-form-label">Name :</label>
       <div class="col-sm-10">
-        <input type="name" class="form-control" formControlName="animal_name" id="aname" placeholder="Name">
+        <input type="text" class="form-control" formControlName="animal_name" id="aname" placeholder="Name" required="true">
       </div>
     </div>
     <div class="form-group row">
@@ -19,20 +19,26 @@
         <input type="number" class="form-control" formControlName="animal_age" id="age" placeholder="Age">
       </div>
     </div>
+    <div class="form-group row">
+      <label for="inputSub" class="col-sm-2 col-form-label">Subspecie :</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" formControlName="animal_subspecie"  id="asub" placeholder="Subspecie">
+      </div>
+    </div>
     <fieldset class="form-group">
       <div class="row">
         <legend class="col-form-label col-sm-2 pt-0">Gender :</legend>
         <div class="col-sm-10">
           <div class="form-check">
             <label class="form-check-label" for="gridRadios1">
-              <input class="form-check-input" formControlName="animal_gender" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+              <input class="form-check-input" formControlName="animal_gender" type="radio" name="gridRadios" id="gridRadios1" value="male" checked>
               <span></span>
               Male
             </label>
           </div>
           <div class="form-check">
             <label class="form-check-label" for="gridRadios2">
-              <input class="form-check-input" formControlName="animal_gender" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+              <input class="form-check-input" formControlName="animal_gender" type="radio" name="gridRadios" id="gridRadios2" value="female">
               <span></span>
               Female
             </label>
@@ -41,6 +47,12 @@
       </div>
     </fieldset>
     <div class="form-group row">
+      <label for="inputCategory" class="col-sm-2 col-form-label">Specie :</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" formControlName="animal_category"  id="aspec" placeholder="Specie" required="true">
+      </div>
+    </div>
+    <!--<div class="form-group row">
       <legend class="col-form-label col-sm-2 pt-0">Specie :</legend>
       <div class="col-sm-10">
         <select name="specie" formControlName="animal_specie" id="specie">
@@ -51,10 +63,10 @@
           <option value="bird">Bird</option>
         </select>
       </div>
-    </div>
+    </div>-->
     <div class="form-group row">
       <div class="col-sm-10">
-        <button type="submit" class="btn btn-primary">Add Up</button>
+        <button type="submit" class="btn btn-primary" [disabled]="addForm.invalid">Add Up</button>
       </div>
     </div>
   </form>
