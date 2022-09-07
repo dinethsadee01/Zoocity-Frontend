@@ -1,22 +1,22 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <div class="add">
-  <form class="form" >
+  <form class="form" [FormGroup]="add" (ngSubmit)="add()">
     <div class="form-group row">
       <label for="inputID" class="col-sm-2 col-form-label">Animal Id :</label>
       <div class="col-sm-10">
-        <input type="id" class="form-control"   id="aid" placeholder="Animal ID">
+        <input type="id" class="form-control" formControlName="animal_id"  id="aid" placeholder="Animal ID">
       </div>
     </div>
     <div class="form-group row">
       <label for="inputName" class="col-sm-2 col-form-label">Name :</label>
       <div class="col-sm-10">
-        <input type="name" class="form-control"  id="aname" placeholder="Name">
+        <input type="name" class="form-control" formControlName="animal_name" id="aname" placeholder="Name">
       </div>
     </div>
     <div class="form-group row">
       <label for="inputAge" class="col-sm-2 col-form-label">Age :</label>
       <div class="col-sm-10">
-        <input type="number" class="form-control"  id="age" placeholder="Age">
+        <input type="number" class="form-control" formControlName="animal_age" id="age" placeholder="Age">
       </div>
     </div>
     <fieldset class="form-group">
@@ -25,23 +25,16 @@
         <div class="col-sm-10">
           <div class="form-check">
             <label class="form-check-label" for="gridRadios1">
-              <input class="form-check-input"  type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+              <input class="form-check-input" formControlName="animal_gender" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
               <span></span>
               Male
             </label>
           </div>
           <div class="form-check">
             <label class="form-check-label" for="gridRadios2">
-              <input class="form-check-input"  type="radio" name="gridRadios" id="gridRadios2" value="option2">
+              <input class="form-check-input" formControlName="animal_gender" type="radio" name="gridRadios" id="gridRadios2" value="option2">
               <span></span>
               Female
-            </label>
-          </div>
-          <div class="form-check disabled">
-            <label class="form-check-label" for="gridRadios3">
-              <input class="form-check-input"  type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
-              <span></span>
-              Other
             </label>
           </div>
         </div>
@@ -50,7 +43,7 @@
     <div class="form-group row">
       <legend class="col-form-label col-sm-2 pt-0">Specie :</legend>
       <div class="col-sm-10">
-        <select name="specie" id="specie">
+        <select name="specie" formControlName="animal_specie" id="specie">
           <option value="null"></option>
           <option value="tiger">Tiger</option>
           <option value="lion">Lion</option>

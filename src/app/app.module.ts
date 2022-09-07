@@ -13,6 +13,7 @@ import { ViewAnimalComponent } from './animal-operation/view-animal/view-animal.
 import { EditAnimalComponent } from './animal-operation/edit-animal/edit-animal.component';
 import { ViewAllAnimalComponent } from './animal-operation/view-all-animal/view-all-animal.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import{HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
