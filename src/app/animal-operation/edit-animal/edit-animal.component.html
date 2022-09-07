@@ -1,1 +1,114 @@
-<p>edit-animal works!</p>
+<head>
+    <title>Edit-animal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div class="input row">
+    <label for="inputID" class="col-sm-2 col-form-label">Enter Animal Id :</label>
+    <input type="id" class="form-control" id="aid" placeholder="Enter Animal ID">
+    <button type="submit" class="btn1 btn-primary">Search</button>
+    <button type="submit" class="btn3 btn-primary">Delete</button>
+  </div>
+  <div>
+    <div class="find">
+        <div class="find-group row">
+          <label for="inputID" class="col-sm-2 col-find-label">A Id :</label>
+          <div class="col-sm-10">
+            <p class="find-control" id="aid">---</p>
+          </div>
+        </div>
+        <div class="find-group row">
+          <label for="inputName" class="col-sm-2 col-find-label">Name :</label>
+          <div class="col-sm-10">
+            <p class="find-control" id="aname">---</p>
+          </div>
+        </div>
+        <div class="find-group row">
+            <label for="inputAge" class="col-sm-2 col-find-label">Age :</label>
+            <div class="col-sm-10">
+              <p class="find-control" id="age">---</p>
+            </div>
+        </div>
+        <div class="find-group row">
+            <label for="inputGender" class="col-sm-2 col-find-label">Gender :</label>
+            <div class="col-sm-10">
+              <p class="find-control" id="agender">---</p>
+            </div>
+        </div>
+        <div class="find-group row">
+            <label for="inputSpecie" class="col-sm-2 col-find-label">Specie :</label>
+            <div class="col-sm-10">
+              <p class="find-control" id="aspecie">---</p>
+            </div>
+        </div>
+        <div class="find-group row">
+          <label for="inputNotes" class="col-sm-2 col-find-label">Notes :</label>
+          <div class="col-sm-10">
+            <p class="find-control" id="aspecie">---</p>
+          </div>
+      </div>
+    </div>
+    <div class="update-form">
+        <form class="form" >
+            <div class="form-group row">
+              <label for="inputName" class="col-sm-2 col-form-label">Name :</label>
+              <div class="col-sm-10">
+                <input type="name" class="form-control"  id="aname" placeholder="Name">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputAge" class="col-sm-2 col-form-label">Age :</label>
+              <div class="col-sm-10">
+                <input type="number" class="form-control"  id="age" placeholder="Age">
+              </div>
+            </div>
+            <fieldset class="form-group">
+              <div class="row">
+                <legend class="col-form-label col-sm-2 pt-0">Gender :</legend>
+                <div class="col-sm-10">
+                  <div class="form-check">
+                    <label class="form-check-label" for="gridRadios1">
+                      <input class="form-check-input"  type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                      <span></span>
+                      Male
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <label class="form-check-label" for="gridRadios2">
+                      <input class="form-check-input"  type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                      <span></span>
+                      Female
+                    </label>
+                  </div>
+                  <div class="form-check disabled">
+                    <label class="form-check-label" for="gridRadios3">
+                      <input class="form-check-input"  type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+                      <span></span>
+                      Other
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            <div class="form-group row">
+              <legend class="col-form-label col-sm-2 pt-0">Specie :</legend>
+              <div class="col-sm-10">
+                <select name="specie" id="specie">
+                  <option value="null"></option>
+                  <option value="tiger">Tiger</option>
+                  <option value="lion">Lion</option>
+                  <option value="elephant">Elephant</option>
+                  <option value="bird">Bird</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-10">
+                <button type="submit" class="btn2 btn-primary">Update</button>
+              </div>
+            </div>
+        </form>
+    </div>
+  </div>
+</body>
+

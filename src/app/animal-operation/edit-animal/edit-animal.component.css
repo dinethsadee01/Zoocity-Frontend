@@ -1,0 +1,129 @@
+.input{
+    text-align: center;
+    position: absolute;
+    color: white;
+    width: 100%;
+    margin-top: 2%;
+    margin-right: 20%;
+    padding-right: 10%;
+    padding-left: 3%;
+}
+
+.input label,.input input{
+    width: 25%;
+}
+
+.form-control{
+    background-color: #27ba8924;
+    border-radius: 30px;
+    border: none;
+    color: #27ba88;
+}
+
+.btn1{
+    background-color: #27ba896a;
+    border: none;
+    border-radius: 30px;
+    width: 10%;
+    margin-left: 1%;
+    transition: 0.5s;
+}
+  
+.btn1:hover{
+    background-color: #27ba88;
+    transform: scale(1.1);
+}
+
+.find{
+    background-color: #27ba8924;
+    border-radius: 30px;
+    margin-top: 9%;
+    margin-left: 8%;
+    padding: 2%;
+    width: 40%;
+    float: left;
+    color: white;
+    transition: 0.6s;
+}
+
+.find:hover{
+    opacity: 0.8;
+    transform: scale(1.2);
+}
+
+.update-form{
+    margin-top: 9%;
+    margin-left: 8%;
+    width: 35%;
+    float: left;
+    color: white;
+}
+
+.form-check-label span{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 3px solid #27ba899a;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.form-check-label input[type="radio"]{
+    display: none;
+}
+  
+.form-check-label span:after{
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #27ba88;
+    display: block;
+    position: absolute;
+    left: 1px;
+    top: 0.5px;
+    border-radius: 50%;
+    transform: scale(0);
+}
+  
+.form-check-label input[type="radio"]:checked ~ span:after{
+    transform: scale(1);
+}
+
+.col-sm-10 select{
+    height: 35px;
+    width: 100%;
+    background-color: #27ba8924;
+    border-radius: 30px;
+    border: none;
+    color: #27ba88;
+}
+
+.btn2{
+    background-color: #27ba896a;
+    border: none;
+    border-radius: 30px;
+    width: 20%;
+    margin-left: 1%;
+    transition: 0.5s;
+}
+  
+.btn2:hover{
+    background-color: #27ba88;
+    transform: scale(1.1);
+}
+
+.btn3{
+    background-color: #ba27276a;
+    border: none;
+    border-radius: 30px;
+    width: 10%;
+    margin-left: 1%;
+    transition: 0.5s;
+}
+
+.btn3:hover{
+    background-color: #ba2727;
+    transform: scale(1.1);
+}
