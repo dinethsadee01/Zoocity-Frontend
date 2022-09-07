@@ -4,20 +4,26 @@ body {
     font-size: 14px;
     line-height: 20px;
     color: #333333;
-  }
+}
   
-  table, th, td {
+table {
     border: solid 1px #000;
     padding: 10px;
-  }
+}
+
+th {
+    border: solid 1px #000;
+    padding: 10px;
+}
+
+td {
+    border: solid 1px #000;
+    padding: 10px;
+}
   
-  table {
+table {
       border-collapse:collapse;
       caption-side:bottom;
-  }
-  
-  caption {
-    font-size: 16px;
-    font-weight: bold;
-    padding-top: 5px;
-  }
+      position: absolute;
+      color: white;
+}
