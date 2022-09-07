@@ -27,8 +27,9 @@ export class AnimalService {
     return this.http.get(this.baseUrl+"/view_animal?id="+id);
   }
 
-  editAnimal(aName:string, age:number, subspecie:string ,gender:string, category:string):Observable<any>{
+  editAnimal(aId:string, aName:string, age:number, subspecie:string ,gender:string, category:string):Observable<any>{
     return this.http.put(this.baseUrl+'/update',{
+      aid:aId,
       aname:aName,
       age:age,
       subspecie:subspecie,
@@ -36,4 +37,9 @@ export class AnimalService {
       category:category
     })
   }
+
+  deleteAnimal(aId:string):Observable<any>{
+    return this.http.delete(this.baseUrl+'/delete?id='+aId)
+  }
+
 }

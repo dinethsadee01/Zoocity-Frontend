@@ -23,7 +23,6 @@ export class EditAnimalComponent implements OnInit {
   })
 
   addForm2: FormGroup = new FormGroup({
-    animal_id: new FormControl(null,[Validators.required]),
     animal_name: new FormControl(null,[Validators.required]),
     animal_age: new FormControl(null,[Validators.required]),
     animal_subspecie: new FormControl(null,[Validators.required]),
@@ -46,6 +45,7 @@ export class EditAnimalComponent implements OnInit {
 
   addE(){
     this.animalService.editAnimal(
+      this.viewForm2.get('search')?.value,
       this.addForm2.get('animal_name')?.value,
       this.addForm2.get('animal_age')?.value,
       this.addForm2.get('animal_subspecie')?.value,
@@ -53,6 +53,12 @@ export class EditAnimalComponent implements OnInit {
       this.addForm2.get('animal_category')?.value,
     )
     .subscribe(res=>{alert(res.data)},err=>{console.log(err)})
+  }
+
+  aDelete(){
+    this.animalService.deleteAnimal(
+      this.viewForm2.get('search')?.value
+    ).subscribe(res=>{alert(res.data)},err=>{console.log(err)})
   }
 
   ngOnInit(): void {
