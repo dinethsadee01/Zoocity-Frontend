@@ -1,0 +1,25 @@
+<head>
+    <title>login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="login-info" style="float: right;">
+        <h2>L<span class="highlight">O</span>GIN</h2>
+        <form [formGroup]="loginForm" (ngSubmit)="login()" >
+            <div class="input-group">
+                <span><i class="fas fa-user" aria-hidden="true"></i></span>
+                <input type="text" formControlName="username" placeholder="Username or Email" required="zoocity">
+            </div>
+            <div class="input-group">
+                <span><i class="fas fa-key" aria-hidden="true"></i></span>
+                <input type="Password" formControlName="password" placeholder="Password" required="zoocity">
+            </div>
+            <div class="form-row bottom">
+                <a href="#" class="forgot">Forgot password?</a>
+            </div>
+            <button class="btn btn-primary btn-block" type="submit">Login</button>
+        </form>
+        <p class="account">All rights reserved.</p>
+    </div>
+</body>

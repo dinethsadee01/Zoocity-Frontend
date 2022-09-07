@@ -1,0 +1,65 @@
+.add{
+  padding-top: 50px;
+  padding-inline: 30%;
+  color: white;
+}
+
+.form-control{
+  background-color: #27ba8924;
+  border: none;
+  border-radius: 20px;
+  color: #27ba88;
+}
+
+.form-check-label input[type="radio"]{
+  display: none;
+}
+
+.form-check-label span{
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 3px solid #27ba899a;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 5px;
+}
+
+.form-check-label span:after{
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #27ba88;
+  display: block;
+  position: absolute;
+  left: 1px;
+  top: 0.5px;
+  border-radius: 50%;
+  transform: scale(0);
+}
+
+.form-check-label input[type="radio"]:checked ~ span:after{
+  transform: scale(1);
+}
+
+.col-sm-10 select{
+  height: 35px;
+  width: 100%;
+  background-color: #27ba8924;
+  border-radius: 30px;
+  border: none;
+  color: #27ba88;
+}
+
+.btn{
+  background-color: #27ba896a;
+  border: none;
+  border-radius: 30px;
+  width: 30%;
+  transition: 0.5s;
+}
+
+.btn:hover{
+  background-color: #27ba88;
+}

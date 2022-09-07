@@ -1,0 +1,23 @@
+.operation{
+    padding: 10px;
+    text-align: center;
+}
+
+.btn1,.btn2,.btn3,.btn4 {
+    color: rgba(255, 255, 255, 0.764);
+    background-color: #27ba896a;
+    margin-left: 20px;
+    width: 15%;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 30px;
+    transition: 0.5s;
+    border: none;
+}
+
+.btn1:hover,.btn2:hover,.btn3:hover,.btn4:hover{
+    background-color: #27ba89;
+    color: white;
+    transform: scale(1.1);
+}

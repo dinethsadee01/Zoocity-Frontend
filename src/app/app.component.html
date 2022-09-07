@@ -1,0 +1,34 @@
+<html>
+<head>
+  <title>Zoocity</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <div class="banner">
+    
+    <nav class="navbar navbar-light" style="background-color: #27ba8916;">
+    <a class="navbar-brand" href="#">
+      <img src="./assets/logo.png" width="250" height="100" alt="Zoocity Wild Park">
+    </a>
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link active" [routerLink]="'home'">H<span class="highlight">O</span>ME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="'dashboard'">DASHB<span class="highlight">O</span>ARD</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="'about-us'">AB<span class="highlight">O</span>UT US</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="'login'">L<span class="highlight">O</span>G IN</a>
+      </li>
+    </ul>
+    </nav>
+
+    <router-outlet></router-outlet>
+  </div>
+  
+</body>
+</html>

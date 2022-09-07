@@ -1,0 +1,84 @@
+.col-div{
+    height: 100%;
+    margin: 10px;
+    width: 23.5%;
+    float: left;
+    color: white;
+}
+
+.box{
+	background-color: #27ba8920;
+	margin-left: 10px;
+	padding: 8%;
+    border-radius: 10px;
+}
+
+.box p{
+    font-size: 70px;
+    color: #27ba88;
+    font-weight: bold;
+    line-height: 30px;
+    padding-left: 10px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.box p span{
+   font-size: 20px;
+   font-weight: 400;
+   color: white;
+}
+
+.box-2{
+    margin: 20px;
+    border-radius: 10px;
+    padding: 2%;
+	width: 47.3%;
+    background-color: #27ba8920;
+    float: left;
+}
+
+.box-3{
+    margin: 20px;
+    border-radius: 10px;
+    padding: 3.3%;
+	width: 47.3%;
+    background-color: #27ba8920;
+    float: right;
+}
+
+.box-2 p, .box-3 p{
+	margin: 0px;
+    font-size: 20px;
+    color: white;
+}
+.star{
+	float: right;
+    background-color: rgba(221, 221, 221, 0.278);
+    border-radius: 10px;
+    padding: 3px 10px;
+    font-size: 15px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;  
+}
+
+th {
+    text-align: center;
+    padding:15px;
+    color: #27ba88;
+}
+
+td{
+    text-align: center;
+    padding:15px;
+    color: #ddd;
+    border-top: 1px solid #505050; 
+}
+
+.worth{
+    font-size: 600%;
+    color: #27ba88;
+}
