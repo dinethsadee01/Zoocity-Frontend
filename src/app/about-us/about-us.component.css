@@ -1,0 +1,42 @@
+.content{
+    width: 100%;
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+    padding: 10%;
+}
+
+.content h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 70px;
+    margin-top: 80px;
+}
+
+.highlight{
+    color: #27ba88;
+}
+
+.mission{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.vision{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+    font-size: larger;
+}
+
+.social-medias img{
+    margin: 0 5px;
+    transition: 0.4s;
+}
+
+.social-medias img:hover{
+    background-color: #27ba88;
+    transform: scale(1.1);
+}

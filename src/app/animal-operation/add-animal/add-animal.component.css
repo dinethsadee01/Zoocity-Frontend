@@ -64,6 +64,6 @@
   background-color: #27ba88;
 }
 
-.btn :disabled{
+.btn::after:disabled{
   background-color: #ba27276a;
 }

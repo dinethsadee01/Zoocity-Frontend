@@ -10,10 +10,10 @@ import { AnimalService } from 'src/app/services/animal.service';
 export class AddAnimalComponent implements OnInit {
 
   addForm: FormGroup = new FormGroup({
-    animal_id: new FormControl(null,[Validators.required]),
-    animal_name: new FormControl(null,[Validators.required]),
+    animal_id: new FormControl(null),
+    animal_name: new FormControl(null),
     animal_age: new FormControl(null,[Validators.required]),
-    animal_subspecie: new FormControl(null,[Validators.required]),
+    animal_subspecie: new FormControl(null),
     animal_gender: new FormControl(null,[Validators.required]),
     animal_category: new FormControl(null,[Validators.required])
   })
@@ -27,7 +27,8 @@ export class AddAnimalComponent implements OnInit {
       this.addForm.get('animal_gender')?.value,
       this.addForm.get('animal_category')?.value,
     )
-    .subscribe(res=>{alert(res.data)},err=>{console.log(err)})
+    .subscribe(res=>{alert(res.data)},err=>{console.log(err)});
+    alert('Added Successfully')
   }
 
   ngOnInit(): void {

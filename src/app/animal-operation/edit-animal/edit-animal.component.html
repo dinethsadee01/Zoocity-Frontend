@@ -6,7 +6,7 @@
   <form [formGroup]="viewForm2" (ngSubmit)="findE()">
     <div class="input row">
       <label for="inputID" class="col-sm-2 col-form-label">Enter Animal Id :</label>
-      <input type="id" formControlName="search" class="form-control" id="aid" placeholder="Enter Animal ID">
+      <input type="number" formControlName="search" class="form-control" id="aid" placeholder="Enter Animal ID">
       <button type="submit" class="btn1 btn-primary">Search</button>
       <button class="btn3 btn-primary" (click)="aDelete()">Delete</button>
     </div>
@@ -70,14 +70,14 @@
                 <div class="col-sm-10">
                   <div class="form-check">
                     <label class="form-check-label" for="gridRadios1">
-                      <input class="form-check-input" formControlName="animal_gender"  type="radio" name="gridRadios" id="gridRadios1" value="male" checked>
+                      <input class="form-check-input" formControlName="animal_gender"  type="radio" name="gridRadios" id="gridRadios1" value="Male" checked>
                       <span></span>
                       Male
                     </label>
                   </div>
                   <div class="form-check">
                     <label class="form-check-label" for="gridRadios2">
-                      <input class="form-check-input" formControlName="animal_gender"  type="radio" name="gridRadios" id="gridRadios2" value="female">
+                      <input class="form-check-input" formControlName="animal_gender"  type="radio" name="gridRadios" id="gridRadios2" value="Female">
                       <span></span>
                       Female
                     </label>
@@ -89,6 +89,12 @@
               <label for="inputCategory" class="col-sm-2 col-form-label">Specie :</label>
               <div class="col-sm-10">
                 <input type="text" class="form-control" formControlName="animal_category"  id="aspec" placeholder="Specie" required="true">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="inputSubspecie" class="col-sm-2 col-form-label">Subspecie</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" formControlName="animal_subspecie"  id="asubspec" placeholder="Subspecie" required="true">
               </div>
             </div>
             <!--<div class="form-group row">

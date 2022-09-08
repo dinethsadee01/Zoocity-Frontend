@@ -6,7 +6,7 @@
   <form [formGroup]="viewForm" (ngSubmit)="find()">
     <div class="input row">
       <label for="inputID" class="col-sm-2 col-form-label">Enter Animal Id :</label>
-      <input type="id" formControlName="search" class="form-control" id="aid" placeholder="Enter Animal ID">
+      <input type="number" formControlName="search" class="form-control" id="aid" placeholder="Enter Animal ID">
       <button type="submit" class="btn btn-primary">Search</button>
     </div>
   </form>
