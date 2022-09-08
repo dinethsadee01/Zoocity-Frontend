@@ -10,7 +10,6 @@ import { ViewAnimalComponent } from './animal-operation/view-animal/view-animal.
 import { ViewAllAnimalComponent } from './animal-operation/view-all-animal/view-all-animal.component';
 import { EditAnimalComponent } from './animal-operation/edit-animal/edit-animal.component';
 
-
 const routes: Routes = [
   {'path': 'home', component: HomeComponent},
   {'path':'dashboard', component: DashboardComponent},

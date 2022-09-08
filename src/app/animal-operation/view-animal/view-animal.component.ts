@@ -11,12 +11,12 @@ export class ViewAnimalComponent implements OnInit {
 
   constructor(private animalService:AnimalService) { }
 
-  aId = "---";
-  aName = "---";
-  aAge = "---";
-  aGender = "---";
-  aCategory="---";
-  aSubspecie = "---";
+  aId = "";
+  aName = "";
+  aAge = "";
+  aGender = "";
+  aCategory = "";
+  aSubspecie = "";
 
   viewForm: FormGroup = new FormGroup({
     search: new FormControl(null)
