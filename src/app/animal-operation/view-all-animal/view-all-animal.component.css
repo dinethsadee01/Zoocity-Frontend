@@ -1,7 +1,6 @@
-body {
-    position: absolute;
-    font-size: 14px;
-    line-height: 20px;
+.view-table{
+    margin-left: 33%;
+    margin-top: 2%;
 }
   
 table {
