@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AnimalOperationComponent implements OnInit {
 
+  uName = sessionStorage.getItem('username')
+  
   constructor() { }
 
   ngOnInit(): void {
+    
+  }
+
+  logout(){
+    sessionStorage.clear();
   }
 
 }

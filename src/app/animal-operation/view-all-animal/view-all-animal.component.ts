@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Animal } from 'src/app/animal';
+import { AnimalService } from 'src/app/services/animal.service';
 
 @Component({
   selector: 'app-view-all-animal',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ViewAllAnimalComponent implements OnInit {
 
-  constructor() { }
+  animalList : Animal[] | undefined;
+
+  constructor(private animalService:AnimalService) { }
 
   ngOnInit(): void {
+    this.allAnimals();
+  }
+
+  allAnimals(){
+    this.animalService.viewAnimals().subscribe((data)=>{
+      this.animalList = data;
+    })
   }
 
 }

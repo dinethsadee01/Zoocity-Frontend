@@ -3,11 +3,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <div class="view-table">
-      <table>
+    <div class="card">
+      <table class="table">
           <thead>
             <tr>
-              <th>Animal ID</th>
+              <th>ID</th>
               <th>Name</th>
               <th>Age</th>
               <th>Gender</th>
@@ -16,48 +16,14 @@
             </tr>
         </thead>
         <tbody>
-        <!--<tr>
-              <td>{{aId}}</td>
-              <td>{{aName}}</td>
-              <td>{{aGender}}</td>
-              <td>{{aCategory}}</td>
-              <td>{{aSubspecie}}</td>
+            <tr *ngFor="let animal of animalList">
+              <th>{{animal.aid}}</th>
+              <td>{{animal.aname}}</td>
+              <td>{{animal.age}}</td>
+              <td>{{animal.gender}}</td>
+              <td>{{animal.category}}</td>
+              <td>{{animal.subspecie}}</td>
             </tr>
-            <tr>
-              <td>{{aId}}</td>
-              <td>{{aName}}</td>
-              <td>{{aGender}}</td>
-              <td>{{aCategory}}</td>
-              <td>{{aSubspecie}}</td>
-            </tr>
-            <tr>
-              <td>{{aId}}</td>
-              <td>{{aName}}</td>
-              <td>{{aGender}}</td>
-              <td>{{aCategory}}</td>
-              <td>{{aSubspecie}}</td>
-            </tr>
-            <tr>
-              <td>{{aId}}</td>
-              <td>{{aName}}</td>
-              <td>{{aGender}}</td>
-              <td>{{aCategory}}</td>
-              <td>{{aSubspecie}}</td>
-            </tr>
-            <tr>
-              <td>{{aId}}</td>
-              <td>{{aName}}</td>
-              <td>{{aGender}}</td>
-              <td>{{aCategory}}</td>
-              <td>{{aSubspecie}}</td>
-            </tr>
-            <tr>
-              <td>{{aId}}</td>
-              <td>{{aName}}</td>
-              <td>{{aGender}}</td>
-              <td>{{aCategory}}</td>
-              <td>{{aSubspecie}}</td>
-            </tr>-->
         </tbody>
       </table>
     </div>
